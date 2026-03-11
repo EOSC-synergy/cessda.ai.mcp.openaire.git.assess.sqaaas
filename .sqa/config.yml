@@ -5,7 +5,7 @@ config:
       branch: feature/pynblint
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cessda/cessda.ai.mcp.openaire:
-      branch: main
+      branch: 0.1.0
       repo: https://github.com/cessda/cessda.ai.mcp.openaire.git
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-ivory-chinchilla.sh
-        container: qc.acc_cozy-maroon-indri
+        - /usr/bin/env sh .sqa/script.pasty-burgundy-birman.sh
+        container: qc.acc_hasty-periwinkle-jaguar
   QC.Doc:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-indigo-newfoundland.sh
-        container: qc.doc_wheezy-crimson-tuatara
+        - /usr/bin/env sh .sqa/script.seedy-lavender-mongrel.sh
+        container: qc.doc_ugly-cerise-ibis
       github.com/cessda/cessda.ai.mcp.openaire git:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-magnolia-kingfisher.sh
-        container: qc.doc_sunny-seashell-skunk
+        - /usr/bin/env sh .sqa/script.scummy-myrtle-sponge.sh
+        container: qc.doc_sleepy-alizarin-mau
       github.com/cessda/cessda.ai.mcp.openaire markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-ochre-crane.sh
-        container: qc.doc_flimsy-aquamarine-lynx
+        - /usr/bin/env sh .sqa/script.queasy-orchid-dugong.sh
+        container: qc.doc_grumpy-cinnamon-bison
   QC.Lic:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-seashell-buzzard.sh
-        container: qc.lic_snoopy-cinnabar-antelope
+        - /usr/bin/env sh .sqa/script.gloppy-olivine-tamarin.sh
+        container: qc.lic_ugly-russet-skunk
   QC.Sec:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-russet-fox.sh
-        container: qc.sec_freaky-sapphire-wolfhound
+        - /usr/bin/env sh .sqa/script.skimpy-blue-quoll.sh
+        container: qc.sec_crabby-black-bloodhound
   QC.Sty:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-silver-frigatebird.sh
-        container: qc.sty_lovely-asparagus-otter
+        - /usr/bin/env sh .sqa/script.tacky-beige-grouse.sh
+        container: qc.sty_cloudy-sangria-dachsbracke
       github.com/cessda/cessda.ai.mcp.openaire hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-cinnamon-tuatara.sh
-        container: qc.sty_leaky-xanthic-quokka
+        - /usr/bin/env sh .sqa/script.messy-ecru-setter.sh
+        container: qc.sty_shabby-indigo-albatross
       github.com/cessda/cessda.ai.mcp.openaire jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-pumpkin-oriole.sh
-        container: qc.sty_frumpy-cardinal-dugong
+        - /usr/bin/env sh .sqa/script.skanky-chocolate-wolf.sh
+        container: qc.sty_hazy-grey-dachsbracke
   QC.Uni:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-tomato-shrew.sh
-        container: qc.uni_lovely-platinum-kangaroo
+        - /usr/bin/env sh .sqa/script.shaggy-wisteria-tang.sh
+        container: qc.uni_cheeky-platinum-fowl
   QC.Ver:
     repos:
       github.com/cessda/cessda.ai.mcp.openaire get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-eggplant-squirrel.sh
-        container: qc.ver_snoopy-ivory-weasel
+        - /usr/bin/env sh .sqa/script.fuzzy-chocolate-havanese.sh
+        container: qc.ver_gimpy-pink-dingo
 timeout: 5400
